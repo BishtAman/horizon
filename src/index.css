@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #8DDFCB */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.shadow-box{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.home{
+    @apply bg-[#8DDFCB] flex h-[100vh] justify-center items-center
+}
+
+.container{
+    @apply border-2 rounded-lg w-[80%] h-[80%] flex
+}
+.container{
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+.sidebar{
+    @apply   bg-[#098969] text-white rounded-l-md
+}
+
+.navbar{
+    @apply flex justify-between bg-[#125041] text-white h-[50px] items-center p-3 space-x-3 w-[100%] rounded-lg
+}
+
+.logo{
+    @apply text-2xl
+}
+
+.logOut{
+    @apply bg-[#8DDFCB] text-slate-500 px-3 py-2 mx-3 rounded-lg hover:text-white hover:bg-[#54cdaf] hover:ring-2
+}
+
+.userImg{
+    @apply bg-slate-600 rounded-[50%] h-[30px] w-[30px] object-cover
+}
+/* 
+.search{
+    @apply border-b-2
+} */
+
+.searchForm{
+    @apply p-[10px]
+}
+
+.searchInp{
+    @apply bg-transparent border-b-2 w-full text-white outline-none p-3 
+}
+
+.userChat{
+    @apply p-3 flex items-center space-x-5 cursor-pointer hover:bg-[#125041]
+}
+/* 
+
+.userChatInfo{
+    @apply 
+} */
+
+.chat{
+    @apply flex rounded-r-md h-[80vh]
+}
+
+.chatInfo{
+    @apply flex h-[70px] text-white justify-between bg-[#2f977d] w-full items-center px-5 font-medium text-lg rounded-r-md
+}
+
+.chatIcons{
+    @apply flex space-x-4
+}
+
+.chatIcons img{
+    @apply h-[25px] w-[25px] invert cursor-pointer
+}
+
+.messages{
+    @apply bg-[#b7f2e3] h-[100%] overflow-y-scroll p-5
+}
+
+.input{
+    @apply bg-white flex p-2 items-center justify-between
+}
+
+.message{
+    @apply flex space-x-5 mb-10
+    
+}
+
+.messages::-webkit-scrollbar-track {
+    border: 1px solid #a1a1a1;
+    padding: 2px 0;
+    background-color: #50c9a1;
+  }
+  
+  .messages::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .messages::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #05816d;
+    border: 1px solid #000;
+  }
+
+.imgUser{
+   @apply w-[30px] h-[30px] rounded-[50%] object-cover
+}
+
+.messageInfo{
+    @apply font-thin text-gray-500  text-sm  flex flex-col items-center
+}
+
+
+
+.messageContent{
+    @apply   flex flex-col w-[60%] space-y-3
+}
+
+
+.owner{
+    @apply flex flex-row-reverse  mb-10
+}
+
+.owner>.messageContent{
+    @apply flex w-[60%]  relative
+}
+
+.owner>.messageContent>p{
+    @apply absolute right-4 rounded-[20px] rounded-tr-[0px] bg-violet-300
+}
+
+.owner>.messageContent>img{
+    @apply pt-10
+}
